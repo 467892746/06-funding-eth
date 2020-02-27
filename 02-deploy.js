@@ -39,7 +39,7 @@ let deploy = async () => {
         data: bytecode,
         // arguments: ['HelloWorld'] // 给构造函数传递参数，使用数组,
     }).send({
-        from: '0xFdC871A37d7970ca27Abed71baE90918ea59a136\n',
+        from: '0x93216C05AD06f4B299aEb01FA093E39C4c1895eB',
         gas: '300000000',
     })
     console.log('instance address:', instance.options.address)
