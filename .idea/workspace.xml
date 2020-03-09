@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa3af633-d8a7-46fa-ac45-9afe56a08d10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts/Funding.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/FundingFactory.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo193.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/TabCenter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/allFundingTab/allFundingTab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/common/card_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/creatorFundingTab/creatorFundingTab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/supporterFundingTab/supporterFundingTab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eth/instance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eth/interaction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/InitWeb3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_compile.js" beforeDir="false" afterPath="$PROJECT_DIR$/01_compile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-deploy.js" beforeDir="false" afterPath="$PROJECT_DIR$/02-deploy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Solidity Contract" />
+        <option value="Go File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,15 +36,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YOYm25eN5XUHxi9n5jlHIVz2TS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,9 +55,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="D:\goland\GoLand 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\godev\src\06-funding-eth\public\images" />
       <recent name="D:\godev\src\06-funding-eth" />
     </key>
   </component>
@@ -68,7 +75,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.02-deploy.js">
+  <component name="RunManager" selected="Go Build.go build 06-funding-eth">
+    <configuration name="go build 06-funding-eth" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="06-funding-eth" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/test.go" />
+      <package value="06-funding-eth" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -90,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 06-funding-eth" />
         <item itemvalue="Node.js.02-deploy.js" />
         <item itemvalue="Node.js.01_compile.js" />
       </list>
@@ -103,7 +120,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
