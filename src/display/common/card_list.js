@@ -1,15 +1,19 @@
 import React from "react";
-import {Card, Image, Icon} from "semantic-ui-react";
+import {Card, Image, List, Progress} from "semantic-ui-react";
 
 const src = '/images/logo193.png'
 
 const CardList = (props) => {
     let details = props.details
+    let onCardClick = props.onCardClick
     let cards = details.map( detail => {
-        return <CardFunding key = {detail.fundingAddress} detail = {detail}/>
+        return <CardFunding key = {detail.fundingAddress}
+                            detail = {detail}
+                            onCardClick = {onCardClick}
+        />
     })
    return (
-       <Card.Group itemsPerRow = {4}>
+       <Card.Group >
            {cards}
        </Card.Group>
    )
@@ -17,17 +21,19 @@ const CardList = (props) => {
 
 const CardFunding = (props) => {
     const {detail} = props;
-    const {funding, projectName, creator, supportBalance, targetBalance, endTime, currentBalance, investorCount} = detail;
-    let percentage = (parseFloat(currentBalance)/parseFloat(targetBalance)).toFixed(2) * 100
+    const {fundingAddress, manager, projectName, targetMoney, supportMoney, leftTime, balance, investorsCount} = detail;
+    let percent = parseFloat(balance)/parseFloat(targetMoney) * 100
     return (
         <div>
-            <Card>
+            <Card onClick={()=>{
+                props.onCardClick(detail)
+            }}>
                 <Image src={src}/>
                 <Card.Content>
                     <Card.Header>{projectName}</Card.Header>
                     <Card.Meta>
-                        <span>剩余时间:{endTime}秒</span>
-                        <Progress indicating percent={percentage} size='small' progress/>
+                        <span>剩余时间:{leftTime}秒</span>
+                        <Progress  percent={percent} size='small' progress/>
                     </Card.Meta>
                     <Card.Description>不容错过</Card.Description>
                 </Card.Content>
@@ -36,19 +42,19 @@ const CardFunding = (props) => {
                         <List.Item>
                             <List.Content>
                                 <List.Header>已筹</List.Header>
-                                <List.Description>{currentBalance}wei</List.Description>
+                                {balance} wei
                             </List.Content>
                         </List.Item>
                         <List.Item>
                             <List.Content>
                                 <List.Header>已达</List.Header>
-                                <List.Description>{percentage}%</List.Description>
+                                {percent}%
                             </List.Content>
                         </List.Item>
                         <List.Item>
                             <List.Content>
                                 <List.Header>参与人数</List.Header>
-                                <List.Description>{investorCount}人</List.Description>
+                                {investorsCount}
                             </List.Content>
                         </List.Item>
                     </List>

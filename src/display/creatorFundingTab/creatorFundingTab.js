@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {getCreatoriFundingDetails} from "../../eth/interaction"
+import {getFundingDetails} from "../../eth/interaction"
 import CardList from "../common/card_list";
+import CreateFundingForm from "./creatorFundingForm";
 class CreatorFundingTab extends Component{
     state = {
         creatorFundingDetails:[],
     }
     async UNSAFE_componentWillMount () {
-        let creatorFundingDetails = await getCreatoriFundingDetails();
+        let creatorFundingDetails = await getFundingDetails(2);
         console.table(creatorFundingDetails)
         this.setState({
             creatorFundingDetails
@@ -15,7 +16,10 @@ class CreatorFundingTab extends Component{
 
     render() {
         return (
-           <CardList details = {this.state.creatorFundingDetails}/>
+            <div>
+                <CardList details = {this.state.creatorFundingDetails}/>
+                <CreateFundingForm/>
+            </div>
         );
     }
 }
