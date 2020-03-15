@@ -25,9 +25,7 @@ const CardFunding = (props) => {
     let percent = parseFloat(balance)/parseFloat(targetMoney) * 100
     return (
         <div>
-            <Card onClick={()=>{
-                props.onCardClick(detail)
-            }}>
+            <Card onClick={()=>{props.onCardClick && props.onCardClick(detail)}}>
                 <Image src={src}/>
                 <Card.Content>
                     <Card.Header>{projectName}</Card.Header>

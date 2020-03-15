@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa3af633-d8a7-46fa-ac45-9afe56a08d10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/logo193.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/display/TabCenter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/display/allFundingTab/allFundingTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/display/common/card_list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/display/creatorFundingTab/creatorFundingTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/display/supporterFundingTab/supporterFundingTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eth/instance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eth/interaction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/InitWeb3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
+    <list default="true" id="aa3af633-d8a7-46fa-ac45-9afe56a08d10" name="Default Changelist" comment="增加合约调用，以及页面展示初始化">
+      <change afterPath="$PROJECT_DIR$/src/display/common/request_list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/Funding.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Funding.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/display/allFundingTab/allFundingTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/display/allFundingTab/allFundingTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/display/common/card_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/display/common/card_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/display/creatorFundingTab/creatorFundingTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/display/creatorFundingTab/creatorFundingTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/display/supporterFundingTab/supporterFundingTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/display/supporterFundingTab/supporterFundingTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eth/interaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/eth/interaction.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +42,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -130,6 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目初始化" />
+    <MESSAGE value="增加合约调用，以及页面展示初始化" />
+    <MESSAGE value="增加创建众筹" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加创建众筹" />
   </component>
 </project>

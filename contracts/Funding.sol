@@ -78,11 +78,9 @@ contract Funding {
         require(msg.sender == manager);
         _;
     }
-
     function getLeftTime() public view returns(uint256) {
         return (endTime - block.timestamp);
     }
-
     function getInvestorsCount() public view returns(uint256){
         return investors.length;
     }
@@ -93,9 +91,6 @@ contract Funding {
         Request memory req = requests[i];
         return (req.purpose, req.cost, req.seller, req.approveCount, req.status);
     }
-
-
-
     function getBalance() public view returns(uint256) {
         return address(this).balance;
     }
